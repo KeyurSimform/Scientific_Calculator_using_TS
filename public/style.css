@@ -1,0 +1,145 @@
+:root{
+    --calc-bg-color : #f2f2f2;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    /* background-origin: padding-box; */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+    /* background-color: #636363; */
+       
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #636363;
+}
+
+
+.calculator{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    background-color: #636363;
+}
+
+.calc-container{
+    position: relative;
+    background-color: var(--calc-bg-color);
+    /* width: 100%; */
+    width: 500px;
+}
+
+.output{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}   
+
+.operation{
+    height: 40px;
+    color: grey;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+
+.result{
+    height: 60px;
+    color: black;
+    font-weight: bolder;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.row-rad-degree {
+    display: flex;
+    justify-content:flex-start;
+    padding-left: 1vw; 
+    /* margin: 1vw; */
+}
+.row-function{
+   display: flex;
+   justify-content:flex-start;
+   padding-left: 1vw;
+}
+
+#RADIAN{
+   margin-right: 10px;
+}
+
+span{
+    background-color: var(--calc-bg-color);
+}
+
+.dropdown{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    box-shadow: 1px 5px 5px 1px rgba(0,0,0,0.75);
+    /* border-radius: none; */
+}
+.row button , .row-rad-degree button{
+    min-width: 75px;
+    min-height: 40px;
+    width: auto;
+    height: auto;
+    background-color: #F2F2F2;
+    font-size: 1.5em;
+    margin-bottom : 15px;
+    cursor: pointer;
+    border: 1px solid grey;
+    box-shadow: 1px 5px 5px 1px rgba(0,0,0,0.75);
+
+}
+
+.row button:hover{
+    font-weight: bold;
+    background-color: grey;
+    transform: scale(1.25);
+    /* transition: ease-in-out; */
+    
+}
+
+.row #calculate{
+    background-color: grey;
+
+}
+.row #delete{
+
+    color: #e05046;
+}
+
+
+
+.input button span{
+    font-size: 0.6em;
+    position: absolute;
+}
+
+.active-angle{
+    background-color: grey !important;
+    color: #FFF !important;
+    /* border-radius: 10px !important; */
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
